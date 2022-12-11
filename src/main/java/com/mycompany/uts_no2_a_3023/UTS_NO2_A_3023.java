@@ -12,18 +12,18 @@ package com.mycompany.uts_no2_a_3023;
 public class UTS_NO2_A_3023 {
 
     public static void main(String[] args) {
-       // Employee_3023 E = new Employee_3023();
-        SalariedEmployee_3023 SE = new SalariedEmployee_3023();
-        CommissionEmployee_3023 CE = new CommissionEmployee_3023();
-        ProjectPlanner_3023 PP = new ProjectPlanner_3023();
-        
-        SE.SalariedEmployee_3023("Putri", 21103023, 250000);
-        CE.CommissionEmployee_3023("Clarissa", 21103024, 450000, 200000, 20);
-        PP.ProjectPlanner_3023("Achasyaa", 21103025, 550000, 250000, 5);
-        System.out.println("\n\n== DATA PERUSAHAAN ==");
-        SE.cetakSalariedEmployee();
-        CE.cetakCommissionEmployee_3023();
-        PP.cetakProjectPlanner_3023();
-                
+      SalariedEmployee_3023 SE = new SalariedEmployee_3023 ("Adzani", "SI21103023", 500000);
+      CommissionEmployee_3023 CE = new CommissionEmployee_3023 ("Jesamyn", "SI20103451", 550000, 200000, 6);
+      ProjectPlanner_3023 PP = new ProjectPlanner_3023 ("Lalisa", "SI22103104", 450000, 350000, 4);
+      
+        System.out.println("===== DATA SALARIED EMPLOYEE =====");
+        SE.cetakInfo_3023();
+        System.out.println(" ");
+        System.out.println("===== DATA COMMISSION EMPLOYEE =====");
+        CE.cetakInfo_3023();
+        System.out.println(" ");
+        System.out.println("===== DATA PROJECT PLANNER =====");
+        PP.cetakInfo_3023();
+        System.out.println(" ");   
     }
 }
